@@ -1,0 +1,17 @@
+{
+  "ServiceId": "com.ibm.cloudoe.orion.client.deploy",
+  "Params": {
+    "Target": {
+      "Url": "https://api.eu-gb.cf.cloud.ibm.com",
+      "Org": "vaibhavgurer@gmail.com",
+      "Space": "dev"
+    },
+    "Name": "Lyrong",
+    "Instrumentation": {
+      "domain": "eu-gb.mybluemix.net",
+      "instances": "1"
+    }
+  },
+  "Path": "manifest.yml",
+  "Type": "Cloud Foundry"
+}

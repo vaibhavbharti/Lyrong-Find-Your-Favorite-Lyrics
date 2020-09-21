@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lyrong</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;900&display=swap" rel="stylesheet" />
+<style>		
+		html {
+		  scroll-behavior: smooth; /* csslint allow: known-properties */
+		}
+
+		body {
+		  font-family: "Poppins", sans-serif;
+		  margin: 0;
+		}
+
+		#logo {
+		  color: #191a20;
+		  font-size: 28px;
+		  font-weight: 700;
+		  letter-spacing: 2px;
+		  margin: 0;
+		}
+
+		#topbar {
+		  width: calc(100% - 104px);
+		  box-shadow: 0px 2px 8px #ccc;
+		  background-color: white;
+		  
+		  position: fixed;
+
+		  padding: 20px 52px;
+		/*   box-sizing: border-box; */
+
+		  display: flex;
+		  align-items: center;
+		  justify-content: space-between;
+		}
+
+		.menu-item {
+		  font-size: 13px;
+		  font-weight: 500;
+		  color: #7a7a7a;
+		  text-decoration: none;
+		  letter-spacing: 1px;
+		  padding: 0px 12px;
+		}
+
+		.menu-item:hover {
+		  color: #fba70b;
+		}
+
+		#main-heading {
+		  font-size: 52px;
+		  color: #191a20;
+		  font-weight: 900;
+		}
+
+		#txt-create {
+		  color: #fba70b;
+		}
+
+		#para {
+		  font-size: 17px;
+		  color: #7a7a7a;
+		  font-weight: 300;
+		  line-height: 30px;
+		}
+
+		.btn-primary {
+		  background-color: #fba70b;
+		  color: #ffffff;
+		  font-size: 14px;
+		  font-weight: 600;
+		  letter-spacing: 1px;
+
+		  border: 0px;
+		  padding: 15px 25px;
+
+		  border-radius: 25px;
+		}
+
+		.btn-primary:hover {
+		  background-color: #f1556a;
+		}
+
+		#landing-section {
+		  padding: 10%;
+		  background-repeat: no-repeat;
+		  background-position: top right;
+		}
+
+		.hyperlink {
+		  text-decoration: none;
+		}
+
+		#first-section {
+		  padding: 10%;
+		}
+
+		#feature-card-grid {
+		  display: flex;
+		  
+		}
+
+		.first-feature-card {
+		  width: 70%;
+		  padding: 10px 10px;
+		  margin: 0 12px;
+		}
+		.second-feature-card {
+		  box-shadow: 2px 2px 4px #ccc;
+		  width: 30%;
+		  padding: 60px 30px;
+		  text-align: center;
+		  
+		  margin: 0 12px;
+		  }
+
+		.feature-card-heading {
+		  margin-top: 0px;
+		  font-size: 22px;
+		  color: #1e1e1e;
+		  margin-bottom: 25px;
+		  font-weight: 500;
+		}
+
+		.feature-card-desc {
+		  font-size: 15px;
+		  line-height: 25px;
+		  color: #888;
+		  font-weight: 400;
+		}
+
+		.feature-card-btn {
+		  background-color: #f4813f;
+		}
+#second-section {
+		  padding: 5% 10%;
+		  
+		}
+
+		#ss-feature-card-grid {
+		  display: flex;
+
+		}
+
+		.ss-feature-card {
+		  box-shadow: 2px 2px 4px #ccc;
+		  width: 100%;
+		  padding: 60px 30px;
+		  text-align: center;
+		  margin: 0 12px;
+		}
+
+		.ss-feature-card-heading {
+		  margin-top: 0px;
+		  font-size: 22px;
+		  color: #1e1e1e;
+		  margin-bottom: 25px;
+		  font-weight: 500;
+		}
+
+		.ss-feature-card-desc {
+		  font-size: 15px;
+		  line-height: 25px;
+		  color: #888;
+		  font-weight: 400;
+		}
+
+		.ss-feature-card-btn {
+		  background-color: #f4813f;
+		}
+
+#third-section {
+		  padding: 5%;
+		  
+		}
+
+		#third-card-grid {
+		  display: flex;
+		}
+
+		.third-card-first {
+		  box-shadow: 2px 2px 4px #ccc;
+		  width: 50%;
+		  padding: 60px 30px;
+		  text-align: center;
+		  color:white;
+		  margin: 0 12px;
+		}
+		.third-card-second {
+		  box-shadow: 2px 2px 4px #ccc;
+		  width: 50%;
+		  padding: 60px 30px;
+		  text-align: center;
+		  margin: 0 12px;
+		}
+
+		.third-card-heading {
+		  margin-top: 0px;
+		  font-size: 22px;
+		  color: #1e1e1e;
+		  margin-bottom: 25px;
+		  font-weight: 500;
+		}
+
+		.third-card-desc {
+		  font-size: 15px;
+		  line-height: 25px;
+		  color: #888;
+		  font-weight: 400;
+		}
+
+
+
+	footer {
+ 		  background-color:  #ab183d;
+		  padding: 10px;
+		  text-align: center;
+	      color: white;
+		}
+</style>
+		
+</head>
+<body>
+	<div id="topbar">
+		<p id="logo">Lyrong</p>
+		  <div>
+			<a class="menu-item" href="#first-section">HOME</a>
+			<a class="menu-item" href="#second-section">ABOUT</a>
+			<a class="menu-item" href="#third-section">DEVELOPER</a>
+			<a class="menu-item" href="#third-section">CONTACT US</a>
+		  </div>
+	</div>
+	
+	
+	<div id="first-section">
+		<div id="feature-card-grid">
+			<div class="first-feature-card">
+				<div id="landing-section">
+				<h1 id="main-heading">
+				Find Your Favorite <br /><span id="txt-create">LYRICS</span>
+				</h1>
+				<p id="para">
+				In <a class="hyperlink" href="#first-section">Lyrong</a> one can easily <a class="hyperlink" href="#first-section">Search for lyrics</a>. <br />You have to 
+				provide Artist name and Song name <br /> 
+				</p>
+				<button class="btn-primary"><a href="#second-section">KNOW US BETTER</button></a>
+				</div>
+		    </div>
+		<div class="second-feature-card" style="background-color:#e6e8c675;">
+			<form action="lyrics" method="POST">  
+				<h1>Search your lyrics here</h1>
+			  	<h2>Author Name*: <br><input type="text" name="authorname" required id="fieldName"> <br>
+				Song Title*: <br><input type="text" name="songname" required id="fieldName"> <br>
+				<input type="submit" value="Lets Go!"> </h2> 
+		  </div>
+		  </div>
+	</div>
+	<div id="second-section">
+			<div id="ss-feature-card-grid">
+			<div class="ss-feature-card">
+			<h3 class="ss-feature-card-heading" style="background-color:#12bce2">About Lyrong</h3>
+			<p class="ss-feature-card-desc">There has been an enormous trend in the music industry. Sometimes it
+						becomes a tedious job to find the correct lyrics of a song. The current trend of
+						research on finding lyrics of your favorite song several variant of these songs
+						algorithms have been developed. The current research is to study and develop
+						algorithm that search for lyrics of song.<br><br>
+						Lyrong is an online website that facilitates song lyrics and provides clean and
+						refreshing experience to the user .It helps in finding the lyrics instantly.<br><br>
+						It disintegrates all the useless information such as paid advertisement etc. It
+						requires two sections for searching lyrics Artist’s name and the name of the
+						song.<br><br>
+						With the help of this system one can access songs’ lyrics anytime and
+						anywhere. Moreover, the website is compatible with almost all the platforms.
+						Another advantage is that it is very light weight and ad free which makes the
+						website ideal.</p>
+		    </div>
+		  </div>
+		</div>
+		<div id="third-section">
+			<div id="third-card-grid">
+			<div class="third-card-first" style="background-color:black;">
+			<h3 class="feature-card-heading" style="color:white;">Developer</h3>
+			<p class="feature-card-desc" style="color:white;">Vaibhav Bharti<br>B.Tech<br>(Cloud Computing)<br>Graphice Era University<br>Dehradun, India</p>
+			
+		    </div>
+		<div class="third-card-second" style="background-color:#de3d3d">
+			<h3 class="feature-card-heading" style="color:white;">Follow Me</h3>
+			<p class="feature-card-desc" style="color:white;"><a href="https://www.instagram.com/vaibhavgurer/">instagram</a><br><br><a href="https://www.facebook.com/vaibhav4ever/">facebook</a><br><br><a href="www.vaibhavbharti4ever@yahoo.in">email</a></p>
+		  </div>
+		  </div>
+		</div>
+	<footer>
+			<p>&copy 2020 copyrights Lyrong</p>
+		</footer>
+  </body>
+</html>
